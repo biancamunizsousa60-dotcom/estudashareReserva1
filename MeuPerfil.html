@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Estuda Share</title>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <section>
+ <nav>
+  <input type="checkbox" id="menu-toggle" hidden>
+  
+  <label for="menu-toggle" class="menu-icon-open">☰</label>
+
+  <ul class="menu-links">
+    <label for="menu-toggle" class="menu-icon-close">✕</label>
+    
+    <li><a href="index.html">🏠Início</a></li>
+    <li><a href="Explorar.html">📝Explorar</a></li>
+    <li><a href="Forum.html">📝Fórum</a></li>
+    <li><a href="MeuPerfil.html">👤Meu perfil</a></li>
+	<li><a href="Adm.html">👤Adm </a></li>
+    </ul>
+</nav>
+  
+  <h1>
+    <div>
+    <img src="logo.jpg" height= "200">
+    </div>
+    Estuda Share
+  </h1>
+    
+    <div>
+    <h2>Perfil do Usuário</h2>
+    
+    <form action="/atualizar-perfil" method="POST">
+        
+        <div>
+            <img src="img4.png" height= "50">
+            </div>
+            <div>
+             <label for="foto">Alterar Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </div>
+
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" value="João Silva" required>
+        </div>
+
+        <div class="campo">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" value="@joaosilva" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="joao@email.com" required>
+        </div>
+
+        <div class="campo">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite uma nova senha para alterar">
+        </div>
+
+        <div class="campo">
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4">Desenvolvedor apaixonado por café e código.</textarea>
+        </div>
+
+        <button type="submit" class="btn-editar">Salvar Alterações</button>
+    </form>
+</div>
+          <hr>
+    
+    <h2> Adicionar </h2>
+    
+ <div>
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" name="categoria" required>
+      <option value="Medicína">Medicína</option>
+      <option value="Direito">Direito</option>
+      <option value="Ciências da Comutação">Ciências da Comutação</option>
+      <option value="Administração">Administração</option>
+      <option value="Letras">Letras</option>
+      <option value="Agricultura">Agricultura</option>
+      
+      
+    </select>
+  </div>
+<br>
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+  </div>
+<br>
+  <div>
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required>
+  </div>
+<br>
+  <div>
+    <label for="texto">Texto:</label>
+    <textarea id="texto" name="texto" rows="6" required></textarea>
+  </div>
+<br> 
+  <div>
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*" required>
+  </div>
+    
+  <button type="submit">Cadastrar organograma</button>
+</form>
+    
+  </section>
+    
+  <section>
+    <hr>
+     <h3>
+ Lista de organograma
+  	</h3>
+    
+    
+    <table border="1">
+  <thead>
+    <tr>
+      <th>Data de inclusão</th>
+      <th>Categoria</th>
+      <th>Título</th>
+      <th>Texto</th>
+      <th>Arquivos</th>
+      <th>Ações</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>09/07/2026</td>
+      <td>Medicina</td>
+      
+      <td>Sistema Cardiovascular</td>
+      <td>"Oi, pessoal! Subi meu mapa de Sistema Cardiovascular. Ele é bem visual, com o coração no centro e cores diferentes para artérias e veias. Usei desenhos e poucas palavras porque foco em bater o olho e lembrar do todo. É ótimo para aquela revisão rápida cinco minutos antes da prova!</td>
+      <td><img><img src="img3.png" height= "50"></img></td>
+     
+      <td>
+        <button>Editar</button>
+        <button>Apagar</button>
+      </td>
+      
+    </tr>
+    <tr>
+      <td>12/05/2026</td>
+      <td>Ciências da Computação</td>
+      
+      <td>Estruturas de Dados</td>
+       <td>"Galera, compartilhei um mapa sobre Estruturas de Dados. Ele é bem estruturado, de cima para baixo. Foquei em mostrar as conexões lógicas: por que uma 'Pilha' é diferente de uma 'Fila' e onde cada uma se aplica. Se você tem dificuldade em entender a hierarquia dos conceitos, esse aqui vai te ajudar muito."</td>
+      <td><img><img src="img2.png" height= "50"></img></td>
+     
+      <td>
+        <button>Editar</button>
+        <button>Apagar</button>
+      </td>
+       </tr>
+    <tr>
+      <td>23/04/2026</td>
+      <td>Direito</td>
+      
+      <td>Processo Penal</td>
+       <td>"Acabei de postar o passo a passo do Processo Penal. Não é um resumo comum, é um guia de 'caminho'. Se acontecer X, o processo vai para a direita; se Y, vai para a esquerda. Usei setas para você não se perder na sequência dos fatos. Ideal para quem estuda lógica ou cronogramas!"</td>
+      <td><img><img src="img1.png" height= "50"></img></td>
+     
+      <td>
+        <button>Editar</button>
+        <button>Apagar</button>
+      </td>
+      
+    </tr>
+    </tbody>
+</table>
+    
+  
+    
+   
+    
+  </section>
+</body>
+
+ <p> &nbsp </p> <hr>
+    <footer>
+      © 2026 Desenvolvimento Web Hoje.
+Criado com ❤️ por Bianca Muniz.
+      </footer>
+
+</html>

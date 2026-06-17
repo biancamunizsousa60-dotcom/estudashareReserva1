@@ -1,0 +1,177 @@
+/* ==========================================
+   1. VARIÁVEIS GLOBAIS (:root)
+   ========================================== */
+:root {
+  /* Cores Principais */
+  --color-primary: #114a9a;      
+  --color-secondary: #f39200;    
+  --color-dark-blue: #1b2447;    
+  --color-accent-green: #8cc63f; 
+  --color-accent-cyan: #00aeef;  
+
+  /* Cores de Interface */
+  --color-bg: #f7f9fc;           
+  --color-text: #2d3748;         
+  --color-white: #ffffff;        
+  --color-border: #e2e8f0;
+
+  /* Fontes e Tamanhos */
+  --font-titles: 'Montserrat', sans-serif;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --font-weight-bold: 600;
+}
+
+/* ==========================================
+   2. CONFIGURAÇÕES GERAIS E RESET
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 20px;
+}
+
+/* Títulos Importantes */
+h1 {
+  font-family: var(--font-titles);
+  font-weight: 800; /* Bem grosso */
+  color: var(--color-primary);
+}
+
+h1 span {
+  font-weight: 500; /* Mais fino */
+  color: var(--color-secondary);
+}
+
+/* Blocos de conteúdo */
+section {
+  background: var(--color-white);
+  border: 1px solid var(--color-border); 
+  border-radius: 8px;
+  margin-bottom: 25px; 
+  padding: 30px;       
+}
+
+/* ==========================================
+   3. MENU DE NAVEGAÇÃO
+   ========================================== */
+.menu-links {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: auto; 
+  background: var(--color-white);
+  z-index: 1000;
+  padding: 15px 20px; 
+
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 20px;
+}
+
+.menu-icon-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+}
+
+#menu-toggle:checked ~ .menu-links {
+  left: 0;
+}
+
+.menu-links li {
+  list-style: none; /* Remove as bolinhas da lista do menu */
+}
+
+.menu-links li a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ==========================================
+   4. COMPONENTES (BOTÕES E CARDS)
+   ========================================== */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Container de Cards Gerais */
+.card-container {
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  width: 300px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Wrapper dos Cards na seção Explorar */
+.cards-wrapper {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px; 
+  flex-wrap: wrap; 
+}
+
+/* ==========================================
+   5. SEÇÃO DO FÓRUM E COMENTÁRIOS
+   ========================================== */
+.forum-section {
+  padding: 40px 20px;
+  text-align: center; 
+}
+
+/* Caixa que segura os comentários lado a lado */
+.comentarios-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;       
+  gap: 20px;             
+  justify-content: center; 
+  margin: 30px 0;        
+}
+
+/* Card de comentário individual */
+.comentario {
+  background-color: var(--color-white); 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  width: 300px;
+  padding: 20px;
+  overflow: hidden;
+  text-align: left; 
+  flex: 0 1 300px; 
+}
+
+.forum-botao {
+  margin-top: 20px;
+}

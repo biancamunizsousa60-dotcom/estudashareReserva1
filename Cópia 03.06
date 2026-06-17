@@ -1,0 +1,67 @@
+<Idoctype html>
+  <html>
+<head>
+<title>Elementos Flutuates</title> 
+  <meta charset="utf-8" />
+  
+<style type="text/css"> 
+  body{
+  background: #6d6d6;
+}
+  
+#galeria-foto{
+  background: #FFEFFE; 
+  width: 290px; 
+  padding:9px, 
+  margin:7px; 
+  float:left;
+  }
+  
+clear{
+  clear:both;
+}
+  </style>
+</head>
+    
+<body>
+<div id="galeria-foto">
+<img src="imagens/imagem1.jpg">
+Conteúdo
+</div>
+  
+<div id="galeria-foto">
+<img src="imagens/imagem2.jpg">
+Conteúdo
+</div>
+
+  <div id="galeria-foto">
+<img src="imagens/imagem3.jpg">
+Conteúdo
+</div>
+    
+    <div id="galeria-foto">
+<img src="imagens/imagem4.jpg">
+Conteúdo
+</div>
+
+      <div id="galeria-foto">
+<img src="imagens/imagem5.jpg">
+Conteúdo
+</div>
+
+<div id="resumo-noticia"> 
+<h2>Elamento Flutuantes 1</h2>
+<p> Lorem Ipsun é simplesmente un texto ficticio da indústria de imoressão e composição. Lorem Ipsun tem sido o texto ficticio padrão da indústria desde os anos 1500 quando u impressor desconhecido pegou ua galé do tipo e embaralhou para fazer um l1vro de amostra de tipos. I </p>
+</div>
+<div id-"resuo-noticia">
+<h2>Elemento Flutuantes 2</h2>
+<p> Loren Ipsum 6 simplesmente um texto ficticio da indústria de impressão e composição. torem Ipsun tem sido o texto ficticio padrio da indústria desde os anos 1500, quando um impressor desconhecido pagou una galé do tipo e embaralhou para fazer un livrc de amostra de tipos. </p>
+</div>
+<div class="clear">
+  Loren Ipsun é simplismente um texto ficticio da industria de produção e composição. Lorem Ipsun é simplesmente un texto ficticio da indústria de imoressão e composição. Lorem Ipsun tem sido o texto ficticio padrão da indústria desde os anos 1500 quando u impressor desconhecido pegou ua galé do tipo e embaralhou para fazer um l1vro de amostra de tipos.Ele sobreviveu não apenas cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lancamnento de folhas de letraset contendo passagens de Lorem Ipsu
+e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker incluindo de Toren Ipsun.
+</div>
+
+<div>Todos os direitos reservados</div> 
+</body>
+<html>

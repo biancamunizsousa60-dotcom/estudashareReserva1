@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Estuda Share</title>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <section>
+ <nav>
+  <input type="checkbox" id="menu-toggle" hidden>
+  
+  <label for="menu-toggle" class="menu-icon-open">☰</label>
+
+  <ul class="menu-links">
+    <label for="menu-toggle" class="menu-icon-close">✕</label>
+    
+    <li><a href="index.html">🏠Início</a></li>
+    <li><a href="Explorar.html">📝Explorar</a></li>
+    <li><a href="Forum.html">📝Fórum</a></li>
+    <li><a href="MeuPerfil.html">👤Meu perfil</a></li>
+	<li><a href="Adm.html">👤Adm </a></li>
+    </ul>
+</nav>
+  
+  <h1>
+    <div>
+    <img src="logo.jpg" height= "200">
+    </div>
+    Estuda Share
+  </h1>
+
+<div>
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" name="categoria" required>
+      <option value="Medicína">Medicína</option>
+      <option value="Direito">Direito</option>
+      <option value="Ciências da Comutação">Ciências da Comutação</option>
+      <option value="Administração">Administração</option>
+      <option value="Letras">Letras</option>
+      <option value="Agricultura">Agricultura</option>
+      
+      
+    </select>
+  </div>
+<br>
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+  </div>
+<br>
+  <div>
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data" required>
+  </div>
+<br>
+  <div>
+    <label for="texto">Texto:</label>
+    <textarea id="texto" name="texto" rows="6" required></textarea>
+  </div>
+<br> 
+  <div>
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*" required>
+  </div>
+    
+<p> &nbsp </p>
+  <button type="submit">Cadastrar organograma</button>
+</form>
+    
+  </section>
+    
+</body>
+    
+    
+    <p> &nbsp </p> <hr>
+    <footer>
+      © 2026 Desenvolvimento Web Hoje.
+Criado com ❤️ por Bianca Muniz.
+      </footer>
+
+</html>
